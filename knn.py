@@ -7,7 +7,6 @@ from sklearn.metrics import accuracy_score, classification_report
 dataset = 'dataset/iris.csv'
 iris = pd.DataFrame(pd.read_csv(dataset))
 iris_col = ['sepal_length', 'sepal_width', 'petal_length', 'petal_width']
-iris_class = []
 iris_input = ['Sepal Length', 'Sepal Width', 'Petal Length', 'Petal Width']
 user_input_data = []
 
