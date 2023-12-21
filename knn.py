@@ -6,12 +6,11 @@ from sklearn.metrics import accuracy_score, classification_report
 
 dataset = 'dataset/iris.csv'
 iris = pd.DataFrame(pd.read_csv(dataset))
-iris_col = ['sepal_length', 'sepal_width', 'petal_length', 'petal_width']
-iris_input = ['Sepal Length', 'Sepal Width', 'Petal Length', 'Petal Width']
+iris_col, iris_class = ['sepal_length', 'sepal_width', 'petal_length', 'petal_width'], ['Sepal Length', 'Sepal Width', 'Petal Length', 'Petal Width']
 user_input_data = []
 
 k_input = int(input("Enter K Neighbor value: "))
-for i in iris_input:
+for i in iris_class:
     input_data = float(input("Please enter " + i + ": "))
     user_input_data.append(input_data)
 
